@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shall We Talk</title>
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 包含 bootstrap 样式表 -->
+    <link rel="shortcut icon" href="img/faicon.ico">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+<div class="container wrap">
+    <div class="row wrapper">
+
+        <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0 left" id="left">
+            <div class="left-header">
+                <img src="img/webwxgeticon.jpg" alt="">
+                <span>CV大虾</span>
+            </div>
+            <div class="left-search">
+                <span class="glyphicon glyphicon-search"></span>
+                <input  type="text" name="" id="" placeholder="搜索">
+            </div>
+            <div class="left-friends">
+                <!--自定义滚动条-->
+                <div class="scroll-cont">
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                    <div class="person">
+                        <div class="person-avatar"><img src="img/xiaofeng.jpg" alt=""></div>
+                        <span class="person-name">小锋</span>
+                    </div>
+                </div>
+                <div class="scroll-bar">
+                    <div class="scroll-slider"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 right" id="right">
+            <div class="user">
+                <div class="text-center">
+                    <!--移动端出现的返回按钮-->
+                    <span class="xs-button glyphicon glyphicon-user	" id="back"></span>
+                    IT浪人<span class="glyphicon glyphicon-chevron-down"></span>
+                </div>
+            </div>
+            <div class="message" id="message">
+                测试用
+                name:<input type="text" id="name">
+                friend: <input type="text" id="friend">
+                room: <input type="text" id="room">
+                <span class="message-title">暂时没有新消息</span>
+            </div>
+            <div class="send">
+                <div class="send-tools">
+                    <span>emoji</span>
+                </div>
+                <div>
+                    <form action="" role="form">
+                        <textarea class="form-control inputMsg" rows="5" autofocus id="inputMsg"></textarea>
+                    </form>
+                </div>
+                <div class="action">
+                    <span>按下Ctrl+Enter换行</span>
+                    <a href="" id="button">发送</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="bootstrap/jquery-3.2.0.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="client.js"></script>
+<script src="scroll.js"></script>
+</body>
+</html>

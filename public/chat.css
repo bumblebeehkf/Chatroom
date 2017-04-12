@@ -1,0 +1,206 @@
+html {
+    height: 100%;
+}
+
+body {
+    height:100%;
+    background-color: #77818b;
+}
+
+.wrap {
+    /*width:65%; */
+    height: 100%;
+    background-color: #77818b;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.left {
+    height: 100%;
+    background-color: #2e3238;
+    color: #fff;
+}
+
+.right {
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+.xs-button {
+    float: left;
+    display: none;
+    cursor: pointer;
+}
+
+
+/*移动端*/
+@media (max-width: 992px) {
+    .left {
+        display: none;
+    }
+    .xs-button {
+        display: block;
+    }
+}
+/*移动端结束*/
+
+.left-header {
+    height: 10%;
+    padding-top: 1em;
+}
+
+.left-header img {
+    width: 3em;
+    height: 3em;
+    border-radius: 4px;
+}
+
+.left-header span {
+    font-size: 1.4em;
+    padding-left: .5em;
+}
+
+.left-search {
+    height: 5%;
+}
+
+.left-search span {
+    color: rgba(188, 172, 153, 0.4);
+    font-size: 1em;
+    width: 6%;
+}
+
+.left-search input {
+    background-color: #26292e;
+    padding-top: 0.5em;
+    display: inline-block;
+    width: 90%;
+    color: #fff;
+    border: none;
+}
+
+.left-search input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.left-friends {
+    position: relative;
+    height: 85%;
+}
+
+/*自定义滚动条*/
+.scroll-cont {
+    height: 100%;
+    overflow: hidden;
+}
+
+.scroll-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: .8em;
+    height: 100%;
+    background-color: #2e3238;
+}
+
+.scroll-slider {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 8px;
+    height: 30px;
+    background-color: #47484a;
+}
+/*滚动条结束*/
+
+
+.person {
+    padding-top: 1.5em;
+}
+
+.person-avatar {
+    display: inline-block;
+}
+
+.person-avatar img {
+    width: 3em;
+    height: 3em;
+    border-radius: 3px;
+}
+
+.person-name {
+    padding-left: 5px;
+}
+
+/*右边发消息部分*/
+.user {
+    height: 6%;
+    padding-top: 1em;
+    border-bottom: 1px solid rgba(188, 172, 153, 0.4);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.glyphicon-chevron-down {
+    font-size: 10px;
+    padding-left: 3px;
+    color: #b3ad96;
+    cursor: pointer;
+}
+
+.message {
+    height: 68%;
+    position: relative;
+}
+
+.message-title {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -3em;
+    color: #b5b5b5;
+    font-size: 13px;
+}
+
+/*自己发的消息样式*/
+.myMsg {
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    clear: both;
+}
+
+/*其它人的样式*/
+.friendMsg {
+    float: left;
+    margin-top: 1em;
+    margin-left: 1em;
+    clear: both;
+}
+
+.send {
+    height: 26%;
+    padding-top: 2em;
+    border-top: 1px solid rgba(188, 172, 153, 0.4);
+    overflow: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*去掉Bootrap中默认的box-shadow*/
+.send textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0;
+}
+
+.action {
+    float: right;
+    margin-top: 1em;
+}
+
+
